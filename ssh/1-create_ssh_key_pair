@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# Creates a 4096-bit RSA SSH key pair protected by a passphrase
