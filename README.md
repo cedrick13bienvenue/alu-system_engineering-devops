@@ -30,3 +30,10 @@ By the end of this project, you should be able to explain, without Google:
 | `ssh/0-use_a_private_key` | Connects to the server as `ubuntu` using the `school` private key |
 | `ssh/1-create_ssh_key_pair` | Generates a 4096-bit RSA key pair named `school`, passphrase-protected |
 | `ssh/2-ssh_config` | SSH client config: use the `school` key, refuse password authentication |
+
+## Usage
+```
+./ssh/1-create_ssh_key_pair
+cp ssh/2-ssh_config ~/.ssh/config
+./ssh/0-use_a_private_key
+```
