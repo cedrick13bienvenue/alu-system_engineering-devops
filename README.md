@@ -16,3 +16,10 @@ By the end of this project, you should be able to explain, without Google:
 - How to create an SSH RSA key pair
 - How to connect to a remote host using an SSH RSA key pair
 - The advantage of using `#!/usr/bin/env bash` instead of `/bin/bash`
+
+## Requirements
+- All files interpreted on Ubuntu 20.04 LTS
+- All files end with a new line
+- The first line of all Bash scripts is exactly `#!/usr/bin/env bash`
+- The second line of all Bash scripts is a comment explaining what it does
+- All Bash script files are executable
