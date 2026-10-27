@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# Connects to the remote server using an SSH RSA private key
