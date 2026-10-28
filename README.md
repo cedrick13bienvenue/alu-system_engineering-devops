@@ -34,3 +34,16 @@ By the end of this project, you should be able to explain, without Google:
 | `web_server/3-redirection` | Installs nginx and 301-redirects `/redirect_me` |
 | `web_server/4-not_found_page_404` | Installs nginx with a custom 404 page |
 | `web_server/5-design_a_beautiful_404_page.html` | A custom-designed 404 page |
+
+## Usage
+Run any configuration script as root on a fresh Ubuntu machine:
+```
+./web_server/1-install_nginx_web_server
+./web_server/3-redirection
+./web_server/4-not_found_page_404
+```
+
+Transfer a file to a remote server:
+```
+./web_server/0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY
+```
