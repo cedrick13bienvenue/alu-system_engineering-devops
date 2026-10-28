@@ -16,3 +16,12 @@ By the end of this project, you should be able to explain, without Google:
 - What are the main HTTP requests
 - What DNS stands for and what its main role is
 - DNS record types: A, CNAME, TXT, MX
+
+## Requirements
+- All files interpreted on Ubuntu 16.04 LTS
+- All files end with a new line
+- The first line of all Bash scripts is exactly `#!/usr/bin/env bash`
+- The second line of all Bash scripts is a comment explaining what it does
+- All Bash script files are executable
+- Bash scripts pass Shellcheck without error
+- `systemctl` is never used for restarting a process
