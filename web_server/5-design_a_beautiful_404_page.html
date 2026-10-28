@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>404 - Ceci n'est pas une page</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #10121a;
+    color: #e9e9f2;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .frame {
+    width: 220px;
+    height: 160px;
+    margin: 0 auto 2rem;
+    border: 6px solid #e9e9f2;
+    border-radius: 6px;
+    position: relative;
+    background:
+      linear-gradient(135deg, transparent 47%, #ff5a5f 47%, #ff5a5f 53%, transparent 53%),
+      linear-gradient(45deg, transparent 47%, #ff5a5f 47%, #ff5a5f 53%, transparent 53%);
+  }
+
+  .frame::after {
+    content: "404";
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: #8c8fa3;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  p {
+    color: #8c8fa3;
+    margin: 0 0 1.5rem;
+  }
+
+  a {
+    color: #10121a;
+    background: #e9e9f2;
+    text-decoration: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.15s ease;
+    display: inline-block;
+  }
+
+  a:hover {
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="frame"></div>
+    <h1>Ceci n'est pas une page</h1>
+    <p>The page you're looking for took a wrong turn somewhere.</p>
+    <a href="/">Back to safety</a>
+  </div>
+</body>
+</html>
