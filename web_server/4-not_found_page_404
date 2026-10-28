@@ -5,8 +5,10 @@ apt-get update -qq
 apt-get install -y nginx
 
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 sed -i '/listen 80 default_server;/a\
-\trewrite ^/redirect_me/?$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+\trewrite ^/redirect_me/?$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\
+\terror_page 404 /404.html;' /etc/nginx/sites-available/default
 
 service nginx start
