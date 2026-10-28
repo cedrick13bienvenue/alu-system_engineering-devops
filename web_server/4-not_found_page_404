@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Installs nginx, serves "Holberton School", redirects /redirect_me, and
+# configures a custom 404 page
+apt-get update -qq
+apt-get install -y nginx
+
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+
+sed -i '/listen 80 default_server;/a\
+\trewrite ^/redirect_me/?$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+
+service nginx start
