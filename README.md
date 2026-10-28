@@ -25,3 +25,12 @@ By the end of this project, you should be able to explain, without Google:
 - All Bash script files are executable
 - Bash scripts pass Shellcheck without error
 - `systemctl` is never used for restarting a process
+
+## Tasks
+| File | Description |
+| --- | --- |
+| `web_server/0-transfer_file` | Transfers a local file to a remote server's home directory via `scp` |
+| `web_server/1-install_nginx_web_server` | Installs nginx and serves a page containing "Holberton School" |
+| `web_server/3-redirection` | Installs nginx and 301-redirects `/redirect_me` |
+| `web_server/4-not_found_page_404` | Installs nginx with a custom 404 page |
+| `web_server/5-design_a_beautiful_404_page.html` | A custom-designed 404 page |
