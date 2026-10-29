@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Installs and configures HAProxy to load balance traffic to web-01 and web-02
+apt-get update -qq
+apt-get install -y haproxy
+
+sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
