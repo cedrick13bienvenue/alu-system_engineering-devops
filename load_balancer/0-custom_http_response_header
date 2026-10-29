@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Configures nginx to add a custom X-Served-By response header
+apt-get update -qq
+apt-get install -y nginx
+
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
