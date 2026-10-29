@@ -17,3 +17,7 @@ Infrastructure track.
 - All Bash script files are executable
 - Bash scripts pass Shellcheck without error
 - `systemctl` is never used for restarting a process
+
+## Usage
+Each project folder is self-contained; see its own README for details and
+usage examples.
