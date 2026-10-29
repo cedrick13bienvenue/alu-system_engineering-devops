@@ -4,3 +4,9 @@ apt-get update -qq
 apt-get install -y nginx
 
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
+
+# shellcheck disable=SC2154
+sed -i "/listen 80 default_server;/a\\
+\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+
+service nginx start
