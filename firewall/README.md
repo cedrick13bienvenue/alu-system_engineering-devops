@@ -29,6 +29,13 @@ By the end of this project, you should be able to explain, without Google:
 *before* setting the default-deny policy and enabling `ufw`, or you will
 lock yourself out of the server with no way to reconnect.
 
+## Debugging tip
+Check whether a port is open from another host with `telnet`:
+```
+telnet web-01.example.com 22    # succeeds if the port is reachable
+telnet web-01.example.com 2222  # hangs/refuses if the port is blocked
+```
+
 ## Tasks
 | File | Description |
 | --- | --- |
