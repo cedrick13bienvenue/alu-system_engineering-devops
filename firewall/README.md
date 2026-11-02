@@ -23,3 +23,8 @@ By the end of this project, you should be able to explain, without Google:
 - Bash scripts pass Shellcheck without error
 - Only web-01 is graded for this task, though the script is safe to run on
   lb-01 and web-02 too
+
+## Warning
+`ufw`'s default incoming policy blocks port 22 (SSH). Always allow 22
+*before* setting the default-deny policy and enabling `ufw`, or you will
+lock yourself out of the server with no way to reconnect.
