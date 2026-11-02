@@ -13,3 +13,11 @@ By the end of this project, you should be able to explain, without Google:
 - What a firewall is and why it matters
 - How to check whether a socket is open with `telnet`
 - How `ufw` default policies and allow rules interact
+
+## Requirements
+- All files interpreted on Ubuntu 16.04 LTS
+- All files end with a new line
+- The first line of all Bash scripts is exactly `#!/usr/bin/env bash`
+- The second line of all Bash scripts is a comment explaining what it does
+- All Bash script files are executable
+- Bash scripts pass Shellcheck without error
