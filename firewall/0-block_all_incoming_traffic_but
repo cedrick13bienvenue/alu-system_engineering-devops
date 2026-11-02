@@ -4,3 +4,4 @@ apt-get update -qq
 apt-get install -y ufw
 
 ufw allow 22/tcp
+ufw allow 80/tcp
