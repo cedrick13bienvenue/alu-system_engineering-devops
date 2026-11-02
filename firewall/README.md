@@ -21,3 +21,5 @@ By the end of this project, you should be able to explain, without Google:
 - The second line of all Bash scripts is a comment explaining what it does
 - All Bash script files are executable
 - Bash scripts pass Shellcheck without error
+- Only web-01 is graded for this task, though the script is safe to run on
+  lb-01 and web-02 too
