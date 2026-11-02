@@ -40,3 +40,9 @@ telnet web-01.example.com 2222  # hangs/refuses if the port is blocked
 | File | Description |
 | --- | --- |
 | `0-block_all_incoming_traffic_but` | Configures `ufw` to block all incoming traffic except TCP 22, 80, and 443 |
+
+## Usage
+```
+./0-block_all_incoming_traffic_but
+ufw status verbose
+```
