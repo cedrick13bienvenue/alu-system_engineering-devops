@@ -28,3 +28,8 @@ By the end of this project, you should be able to explain, without Google:
 `ufw`'s default incoming policy blocks port 22 (SSH). Always allow 22
 *before* setting the default-deny policy and enabling `ufw`, or you will
 lock yourself out of the server with no way to reconnect.
+
+## Tasks
+| File | Description |
+| --- | --- |
+| `0-block_all_incoming_traffic_but` | Configures `ufw` to block all incoming traffic except TCP 22, 80, and 443 |
