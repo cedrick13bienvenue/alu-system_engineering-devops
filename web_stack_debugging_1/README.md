@@ -13,3 +13,9 @@ port 80. This project debugs why, and writes the minimal fix.
 - Bash scripts pass Shellcheck without error
 - Bash scripts run without error
 - `wget` is never used
+
+## Debugging steps
+1. Confirm nginx is actually installed:
+   ```
+   dpkg -l | grep nginx
+   ```
