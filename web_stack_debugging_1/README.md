@@ -23,3 +23,7 @@ port 80. This project debugs why, and writes the minimal fix.
    ```
    ps aux | grep nginx
    ```
+3. Check whether anything is actually bound to port 80:
+   ```
+   ss -tlnp | grep :80
+   ```
