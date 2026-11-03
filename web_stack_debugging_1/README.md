@@ -40,3 +40,9 @@ it does on a real VM.
 | File | Description |
 | --- | --- |
 | `0-nginx_likes_port_80` | Starts nginx so it listens on port 80 of every IPv4 address |
+
+## Usage
+```
+./0-nginx_likes_port_80
+curl 0:80
+```
