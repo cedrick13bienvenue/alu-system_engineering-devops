@@ -27,3 +27,8 @@ port 80. This project debugs why, and writes the minimal fix.
    ```
    ss -tlnp | grep :80
    ```
+
+## Root cause
+nginx is installed but was never started. Containers don't run an init
+system, so `apt-get install nginx` doesn't auto-start the service the way
+it does on a real VM.
