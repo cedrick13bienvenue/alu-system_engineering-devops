@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# Starts nginx so it listens on port 80 of all the server's IPv4 addresses
