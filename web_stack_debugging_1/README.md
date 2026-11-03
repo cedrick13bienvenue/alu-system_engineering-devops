@@ -2,7 +2,8 @@
 
 ## Description
 A fresh Ubuntu container has nginx installed, but it isn't listening on
-port 80. This project debugs why, and writes the minimal fix.
+port 80: `service nginx start` was never run. This project walks through
+the debugging steps and ships the one-line fix.
 
 ## Resources
 - Web stack debugging guide (ALU concept page)
