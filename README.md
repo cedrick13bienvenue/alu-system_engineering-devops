@@ -10,6 +10,7 @@ Infrastructure track.
 | [`web_server`](web_server/) | Install and configure nginx: static pages, redirects, a custom 404 |
 | [`load_balancer`](load_balancer/) | Double the web server fleet and balance traffic across them with HAProxy |
 | [`firewall`](firewall/) | Lock down web-01 with `ufw`, allowing only SSH, HTTP, and HTTPS |
+| [`web_stack_debugging_1`](web_stack_debugging_1/) | Debug why nginx isn't listening on port 80, and fix it |
 
 ## Conventions
 - A README.md is mandatory at the root of every project folder
