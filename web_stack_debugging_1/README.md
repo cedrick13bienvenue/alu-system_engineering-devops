@@ -19,3 +19,7 @@ port 80. This project debugs why, and writes the minimal fix.
    ```
    dpkg -l | grep nginx
    ```
+2. Check whether the nginx process is running at all:
+   ```
+   ps aux | grep nginx
+   ```
