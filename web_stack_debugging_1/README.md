@@ -4,6 +4,9 @@
 A fresh Ubuntu container has nginx installed, but it isn't listening on
 port 80. This project debugs why, and writes the minimal fix.
 
+## Resources
+- Web stack debugging guide (ALU concept page)
+
 ## Requirements
 - All files interpreted on Ubuntu 20.04 LTS
 - All files end with a new line
