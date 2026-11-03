@@ -35,3 +35,8 @@ port 80. This project debugs why, and writes the minimal fix.
 nginx is installed but was never started. Containers don't run an init
 system, so `apt-get install nginx` doesn't auto-start the service the way
 it does on a real VM.
+
+## Tasks
+| File | Description |
+| --- | --- |
+| `0-nginx_likes_port_80` | Starts nginx so it listens on port 80 of every IPv4 address |
