@@ -18,3 +18,9 @@ unprivileged nginx user.
 Root can do anything, including destroy the system with one typo. As
 root, you can still run a single command as another, less privileged
 user without ever leaving your root shell or needing their password.
+
+## Debugging nginx's privileges
+1. Check who nginx's master and worker processes actually run as:
+   ```
+   ps auxff | grep ngin[x]
+   ```
