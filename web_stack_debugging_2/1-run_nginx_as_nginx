@@ -7,3 +7,9 @@ chown -R nginx:nginx /run/nginx /var/log/nginx
 
 sed -i 's/^user .*;/user nginx;/' /etc/nginx/nginx.conf
 sed -i 's|^pid .*;|pid /run/nginx/nginx.pid;|' /etc/nginx/nginx.conf
+
+service nginx stop
+pkill -9 -f "nginx: " 2>/dev/null
+sleep 1
+
+su -s /bin/sh -c nginx nginx
