@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Fixes nginx to run as the nginx user instead of root
+id -u nginx &>/dev/null || useradd --no-create-home --shell /usr/sbin/nologin nginx
