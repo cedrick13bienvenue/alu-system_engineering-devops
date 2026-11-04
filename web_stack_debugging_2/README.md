@@ -1,9 +1,9 @@
 # Web stack debugging #2
 
 ## Description
-Two privilege-related fixes: running a command as another user without
-logging in as them, and fixing nginx so it drops root and runs as the
-unprivileged nginx user.
+Two privilege-related fixes: running `whoami` as another user without a
+password or a login shell, and fixing nginx so its master process drops
+root and runs as the unprivileged `nginx` user instead.
 
 ## Requirements
 - All files interpreted on Ubuntu 14.04 LTS
