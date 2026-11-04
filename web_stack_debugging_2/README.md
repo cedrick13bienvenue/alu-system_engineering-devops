@@ -24,3 +24,9 @@ user without ever leaving your root shell or needing their password.
    ```
    ps auxff | grep ngin[x]
    ```
+2. Check the `user` directive in `/etc/nginx/nginx.conf`: it had been
+   overridden to `user root;`, and the init script always launches the
+   master process as root regardless of that directive, so the only way
+   to get the master process itself running as `nginx` is to start the
+   `nginx` binary directly as that user instead of going through the
+   init script.
