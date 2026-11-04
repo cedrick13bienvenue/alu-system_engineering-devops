@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 # Fixes nginx to run as the nginx user instead of root
 id -u nginx &>/dev/null || useradd --no-create-home --shell /usr/sbin/nologin nginx
+
+mkdir -p /run/nginx
+chown -R nginx:nginx /run/nginx /var/log/nginx
+
+sed -i 's/^user .*;/user nginx;/' /etc/nginx/nginx.conf
+sed -i 's|^pid .*;|pid /run/nginx/nginx.pid;|' /etc/nginx/nginx.conf
