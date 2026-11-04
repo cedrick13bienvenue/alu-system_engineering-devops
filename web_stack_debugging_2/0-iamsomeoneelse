@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# Runs the whoami command as the user given in the first argument
