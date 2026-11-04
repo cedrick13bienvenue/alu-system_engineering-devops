@@ -11,6 +11,7 @@ Infrastructure track.
 | [`load_balancer`](load_balancer/) | Double the web server fleet and balance traffic across them with HAProxy |
 | [`firewall`](firewall/) | Lock down web-01 with `ufw`, allowing only SSH, HTTP, and HTTPS |
 | [`web_stack_debugging_1`](web_stack_debugging_1/) | Debug why nginx isn't listening on port 80, and fix it |
+| [`web_stack_debugging_2`](web_stack_debugging_2/) | Run commands as another user, and fix nginx to run as nginx instead of root |
 
 ## Conventions
 - A README.md is mandatory at the root of every project folder
