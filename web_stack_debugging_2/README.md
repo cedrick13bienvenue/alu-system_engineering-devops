@@ -30,3 +30,9 @@ user without ever leaving your root shell or needing their password.
    to get the master process itself running as `nginx` is to start the
    `nginx` binary directly as that user instead of going through the
    init script.
+
+## Tasks
+| File | Description |
+| --- | --- |
+| `0-iamsomeoneelse` | Runs `whoami` as the user given in the first argument |
+| `1-run_nginx_as_nginx` | Fixes nginx to run as the `nginx` user, listening on port 8080 |
