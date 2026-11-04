@@ -13,3 +13,8 @@ unprivileged nginx user.
 - All Bash script files are executable
 - Bash scripts pass Shellcheck without error
 - Bash scripts run without error
+
+## Why not stay logged in as root?
+Root can do anything, including destroy the system with one typo. As
+root, you can still run a single command as another, less privileged
+user without ever leaving your root shell or needing their password.
