@@ -54,6 +54,9 @@ directly, regardless of what the application chooses to log.
 runs as `www-data`, so `require_once()` in `wp-config.php` got a
 permission-denied error trying to read it, which PHP turned into a 500.
 
+## Tools used
+`strace`, `tmux`, `curl`, and `puppet`.
+
 ## Tasks
 | File | Description |
 | --- | --- |
