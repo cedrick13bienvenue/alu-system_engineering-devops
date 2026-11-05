@@ -25,3 +25,10 @@ strace to find the real cause, and fixes it with Puppet.
 apt-get install -y ruby
 gem install puppet-lint -v 2.1.1
 ```
+
+## Debugging steps
+1. Confirm the site is actually broken:
+   ```
+   curl -sI 127.0.0.1
+   # HTTP/1.0 500 Internal Server Error
+   ```
