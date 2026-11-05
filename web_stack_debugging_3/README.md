@@ -53,3 +53,8 @@ directly, regardless of what the application chooses to log.
 `/var/www/html/wp-settings.php` had its permissions set to `000`. Apache
 runs as `www-data`, so `require_once()` in `wp-config.php` got a
 permission-denied error trying to read it, which PHP turned into a 500.
+
+## Tasks
+| File | Description |
+| --- | --- |
+| `0-strace_is_your_friend.pp` | Puppet manifest that fixes `wp-settings.php`'s permissions |
