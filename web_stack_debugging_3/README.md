@@ -42,3 +42,8 @@ gem install puppet-lint -v 2.1.1
    ```
    openat(AT_FDCWD, "/var/www/html/wp-settings.php", O_RDONLY) = -1 EACCES (Permission denied)
    ```
+
+## Root cause
+`/var/www/html/wp-settings.php` had its permissions set to `000`. Apache
+runs as `www-data`, so `require_once()` in `wp-config.php` got a
+permission-denied error trying to read it, which PHP turned into a 500.
