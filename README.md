@@ -21,6 +21,8 @@ Infrastructure track.
 - All Bash script files are executable
 - Bash scripts pass Shellcheck without error
 - `systemctl` is never used for restarting a process
+- Puppet manifests end with `.pp`, start with an explanatory comment, and
+  pass `puppet-lint` without error
 
 ## Usage
 Each project folder is self-contained; see its own README for details and
