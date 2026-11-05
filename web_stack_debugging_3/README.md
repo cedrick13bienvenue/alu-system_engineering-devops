@@ -2,8 +2,8 @@
 
 ## Description
 A WordPress site running on a LAMP stack (Linux, Apache, MySQL, PHP) is
-returning a 500 error with nothing useful in the logs. This project uses
-strace to find the real cause, and fixes it with Puppet.
+returning a 500 error with nothing useful in the logs. strace reveals
+`wp-settings.php` is unreadable; this project fixes it with Puppet.
 
 ## Resources
 - [strace(1) man page](https://man7.org/linux/man-pages/man1/strace.1.html)
