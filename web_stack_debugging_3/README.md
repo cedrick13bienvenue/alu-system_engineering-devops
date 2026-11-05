@@ -19,3 +19,9 @@ strace to find the real cause, and fixes it with Puppet.
 - The first line of every Puppet manifest is a comment explaining what it does
 - Puppet manifest files end with the `.pp` extension
 - Files are checked with Puppet v3.4
+
+## Installing puppet-lint
+```
+apt-get install -y ruby
+gem install puppet-lint -v 2.1.1
+```
