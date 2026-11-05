@@ -58,3 +58,10 @@ permission-denied error trying to read it, which PHP turned into a 500.
 | File | Description |
 | --- | --- |
 | `0-strace_is_your_friend.pp` | Puppet manifest that fixes `wp-settings.php`'s permissions |
+
+## Usage
+```
+curl -sI 127.0.0.1               # HTTP/1.0 500 Internal Server Error
+puppet apply 0-strace_is_your_friend.pp
+curl -sI 127.0.0.1               # HTTP/1.1 200 OK
+```
