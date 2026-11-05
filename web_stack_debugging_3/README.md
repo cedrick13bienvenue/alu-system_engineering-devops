@@ -32,3 +32,13 @@ gem install puppet-lint -v 2.1.1
    curl -sI 127.0.0.1
    # HTTP/1.0 500 Internal Server Error
    ```
+2. Trace the actual syscalls Apache/PHP make while handling the request
+   (run one in a tmux pane, curl in another):
+   ```
+   strace -f -e trace=openat -p <apache_worker_pid>
+   curl 127.0.0.1
+   ```
+   This surfaces the exact failing syscall:
+   ```
+   openat(AT_FDCWD, "/var/www/html/wp-settings.php", O_RDONLY) = -1 EACCES (Permission denied)
+   ```
