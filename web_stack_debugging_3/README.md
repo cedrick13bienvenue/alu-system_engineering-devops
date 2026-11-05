@@ -65,3 +65,8 @@ curl -sI 127.0.0.1               # HTTP/1.0 500 Internal Server Error
 puppet apply 0-strace_is_your_friend.pp
 curl -sI 127.0.0.1               # HTTP/1.1 200 OK
 ```
+
+Check the manifest itself with:
+```
+puppet-lint 0-strace_is_your_friend.pp
+```
