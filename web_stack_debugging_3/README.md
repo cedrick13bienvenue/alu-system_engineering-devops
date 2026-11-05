@@ -26,6 +26,12 @@ apt-get install -y ruby
 gem install puppet-lint -v 2.1.1
 ```
 
+## Why strace instead of the logs
+Depending on how PHP's error logging is configured, a permission-denied
+`require_once()` doesn't always end up clearly in Apache's error log.
+Attaching strace to the worker process shows the failing syscall
+directly, regardless of what the application chooses to log.
+
 ## Debugging steps
 1. Confirm the site is actually broken:
    ```
