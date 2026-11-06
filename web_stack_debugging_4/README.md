@@ -33,3 +33,11 @@ gem install puppet-lint -v 2.1.1
    ```
    A large chunk of the 2000 requests come back as failures or non-2xx
    responses, even though the server is barely doing any real work.
+2. Check nginx's error log while the benchmark runs:
+   ```
+   tail -f /var/log/nginx/error.log
+   ```
+   It fills up with one message, repeated hundreds of times:
+   ```
+   limiting connections by zone "addr", client: 127.0.0.1, ...
+   ```
