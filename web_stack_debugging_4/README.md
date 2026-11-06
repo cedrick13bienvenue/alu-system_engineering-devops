@@ -54,3 +54,8 @@ every client IP at 2 concurrent connections. A benchmarking tool (or any
 real client making several parallel requests) immediately trips that
 limit, and nginx answers the excess connections with an error response
 instead of serving them.
+
+## Tasks
+| File | Description |
+| --- | --- |
+| `0-the_sky_is_the_limit_not.pp` | Puppet manifest that removes the per-IP connection limit and reloads nginx |
