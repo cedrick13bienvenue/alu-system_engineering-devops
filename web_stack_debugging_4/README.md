@@ -26,6 +26,12 @@ apt-get install -y ruby
 gem install puppet-lint -v 2.1.1
 ```
 
+## Why this matters
+A single misconfigured rate limit can look exactly like a capacity
+problem: CPU and memory stay idle while the server quietly refuses
+traffic. Benchmarking before and after a fix is the only way to tell
+"slow" from "actively rejecting requests" apart.
+
 ## Debugging steps
 1. Baseline the server under load:
    ```
