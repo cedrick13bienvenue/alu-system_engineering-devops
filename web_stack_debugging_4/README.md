@@ -66,3 +66,8 @@ ab -c 100 -n 2000 localhost/            # Failed requests: > 0
 puppet apply 0-the_sky_is_the_limit_not.pp
 ab -c 100 -n 2000 localhost/            # Failed requests: 0
 ```
+
+Check the manifest itself with:
+```
+puppet-lint 0-the_sky_is_the_limit_not.pp
+```
