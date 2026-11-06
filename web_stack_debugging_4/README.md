@@ -25,3 +25,11 @@ logs, and fixes it with Puppet.
 apt-get install -y ruby
 gem install puppet-lint -v 2.1.1
 ```
+
+## Debugging steps
+1. Baseline the server under load:
+   ```
+   ab -c 100 -n 2000 localhost/
+   ```
+   A large chunk of the 2000 requests come back as failures or non-2xx
+   responses, even though the server is barely doing any real work.
