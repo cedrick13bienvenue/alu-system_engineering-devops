@@ -13,6 +13,7 @@ Infrastructure track.
 | [`web_stack_debugging_1`](web_stack_debugging_1/) | Debug why nginx isn't listening on port 80, and fix it |
 | [`web_stack_debugging_2`](web_stack_debugging_2/) | Run commands as another user, and fix nginx to run as nginx instead of root |
 | [`web_stack_debugging_3`](web_stack_debugging_3/) | Use strace to find a silent WordPress 500 error, and fix it with Puppet |
+| [`web_stack_debugging_4`](web_stack_debugging_4/) | Benchmark nginx under load and fix the connection limit dropping requests |
 
 ## Conventions
 - A README.md is mandatory at the root of every project folder
