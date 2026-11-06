@@ -55,6 +55,9 @@ real client making several parallel requests) immediately trips that
 limit, and nginx answers the excess connections with an error response
 instead of serving them.
 
+## Tools used
+`ab` (ApacheBench), nginx's own error log, and `puppet`.
+
 ## Tasks
 | File | Description |
 | --- | --- |
