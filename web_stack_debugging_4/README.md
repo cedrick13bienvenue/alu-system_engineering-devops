@@ -59,3 +59,10 @@ instead of serving them.
 | File | Description |
 | --- | --- |
 | `0-the_sky_is_the_limit_not.pp` | Puppet manifest that removes the per-IP connection limit and reloads nginx |
+
+## Usage
+```
+ab -c 100 -n 2000 localhost/            # Failed requests: > 0
+puppet apply 0-the_sky_is_the_limit_not.pp
+ab -c 100 -n 2000 localhost/            # Failed requests: 0
+```
