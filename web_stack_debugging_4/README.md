@@ -41,3 +41,10 @@ gem install puppet-lint -v 2.1.1
    ```
    limiting connections by zone "addr", client: 127.0.0.1, ...
    ```
+
+## Root cause
+`/etc/nginx/sites-available/default` had `limit_conn addr 2;`, capping
+every client IP at 2 concurrent connections. A benchmarking tool (or any
+real client making several parallel requests) immediately trips that
+limit, and nginx answers the excess connections with an error response
+instead of serving them.
