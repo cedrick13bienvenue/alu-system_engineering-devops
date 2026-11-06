@@ -55,6 +55,11 @@ real client making several parallel requests) immediately trips that
 limit, and nginx answers the excess connections with an error response
 instead of serving them.
 
+## Caution
+This fix removes the limit outright. In production, a per-IP connection
+limit can be a legitimate defense against abuse; the real fix there is
+raising it to a sane value for your actual traffic, not deleting it.
+
 ## Tools used
 `ab` (ApacheBench), nginx's own error log, and `puppet`.
 
